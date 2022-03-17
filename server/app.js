@@ -5,14 +5,14 @@ const MONGO = process.env.MONGO;
 class App {
   constructor(){
     this.server = express();
-    mongoose.connect(MONGO);
+    mongoose.connect(MONGO, ()=> console.log("BD conectado."));
 
     this.middlewares();
     this.routes();
   }
 
   middlewares(){
-    this.server.use(express.urlencoded({extended: false}), express.json(), cors());
+    this.server.use(express.static("public"), express.urlencoded({extended: false}), express.json(), cors());
   }
 
   routes(){

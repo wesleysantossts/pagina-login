@@ -1,7 +1,7 @@
 const {Router} = require("express"), routes = new Router();
 
-routes.get("/", (req, res)=>{
-  res.json({ok: true})
-})
+const SessionController = require("./controller/SessionController");
+
+routes.post("/novousuario", SessionController.CriarUsuario)
 
 module.exports = routes;
