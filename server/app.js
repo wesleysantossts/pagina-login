@@ -1,4 +1,4 @@
-const express = require("express"), cors = require("cors"), routes = require("./routes"), mongoose = require("mongoose");
+const express = require("express"), cors = require("cors"), routes = require("./routes"), mongoose = require("mongoose"), Middleware = require("./middlewares");
 require("dotenv").config();
 const MONGO = process.env.MONGO;
 
