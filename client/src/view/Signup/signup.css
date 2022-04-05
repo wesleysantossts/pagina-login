@@ -1,21 +1,21 @@
-.conteudoSignin {
+.conteudoSignup {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-items: center; */
 }
 
-.formSignin {
+.formSignup {
   position: relative;
   transform: translateY(60%);
   width: 50%;
 }
 
-.formSignin h1 {
+.formSignup h1 {
   text-align: center;
 }
 
-.formSignin input {
+.formSignup input {
   width: 100%;
   padding: 8px;
   margin: 2.5px 0;
@@ -23,7 +23,7 @@
   border: 1.5px solid gray;
 }
 
-.formSignin button {
+.formSignup button {
   width: 100%;
   border-radius: 10px;
   border: none;
@@ -35,12 +35,12 @@
   margin: 10px 0
 }
 
-.formSignin a {
+.formSignup a {
   color: #00a0ff;
   font-weight: bold;
 }
 
-.formSignin p {
+.formSignup p {
   text-align: center;
   font-size: .9em;
 }
@@ -53,17 +53,17 @@
     /* justify-items: center; */
   }
   
-  .formSignin {
+  .formSignup {
     position: relative;
     transform: translateY(60%);
     width: 30%;
   }
   
-  .formSignin h1 {
+  .formSignup h1 {
     text-align: center;
   }
   
-  .formSignin input {
+  .formSignup input {
     width: 100%;
     padding: 8px;
     margin: 4px 0;
@@ -71,7 +71,7 @@
     border: 1.5px solid gray;
   }
 
-  .formSignin button {
+  .formSignup button {
     width: 100%;
     border-radius: 10px;
     border: none;
@@ -83,16 +83,16 @@
     margin: 10px 0
   }
 
-  .formSignin button:hover {
+  .formSignup button:hover {
     background-color: #00a0cf;
   }
   
-  .formSignin a {
+  .formSignup a {
     color: #00a0ff;
     font-weight: bold;
   }
   
-  .formSignin p {
+  .formSignup p {
     text-align: center;
     font-size: .9em;
   }
