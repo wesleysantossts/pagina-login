@@ -1,23 +1,29 @@
 import {Route, Redirect} from "react-router-dom";
-import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 
 export default function MyRoute({component: Component, isClosed, ...rest}){
-  const isLogged = false;
-
-  if(isClosed && !isLogged){
+  const [isLogged, setIsLogged] = useState();
+  
+  useEffect(()=>{
+    (function conferirStorage(){
+      const token = localStorage.getItem("token");
+      
+      if(token){
+        setIsLogged(true);
+        // console.log(isLogged);
+      } else {
+        setIsLogged(false)
+      }
+    })(); 
+  }, [isLogged]);
+  
+  if(isLogged === false && isClosed){
     return(
       <Redirect 
-        to={{pathname: "/login", state: {prevPath: rest.location.pathname}}}
+        to={{pathname: "/signin", state: {prevPath: rest.location.pathname}}}
       />      
     )
   }
 
   return <Route {...rest} component={Component} />;
-}
-
-// validação
-MyRoute.defaultProps = {isClosed: false};
-MyRoute.propTypes = {
-  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func]).isRequired,
-  isClosed: PropTypes.bool
 }
