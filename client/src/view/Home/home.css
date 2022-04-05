@@ -1,0 +1,21 @@
+.conteudoHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 80%;
+}
+
+main p {
+  /* background-color: yellow; */
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  img {
+    width: 40%;
+  }
+}

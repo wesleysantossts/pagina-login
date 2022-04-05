@@ -1,1 +1,0 @@
-export const USUARIO_LOGADO = "USUARIO_LOGADO";

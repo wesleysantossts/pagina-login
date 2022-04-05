@@ -43,6 +43,33 @@ class SessionController {
     }
 
   }
+
+  async AutenticarUsuario(req, res){
+    let {email, senha} = req.body;
+
+    let user = await User.findOne({"email": email});
+
+    if(!user){
+      req.status(403);
+      req.json({error: "E-mail não cadastrado."})
+    }
+
+    let isPassword = await bcrypt.compare(senha, user.senha);
+
+    if(!isPassword){
+      res.status(403);
+      res.json({error: "Senha incorreta."})
+    }
+
+    jwt.sign({email}, JWTSecret, {expiresIn: "48h"}, (err, token)=>{
+      if(err){
+        res.status(500);
+        console.log(err)
+      }
+
+      res.json({token})
+    })
+  }
 }
 
 module.exports = new SessionController();

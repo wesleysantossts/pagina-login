@@ -1,0 +1,103 @@
+.conteudoSignin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-items: center; */
+}
+
+.formSignin {
+  position: relative;
+  transform: translateY(60%);
+  width: 50%;
+}
+
+.formSignin h1 {
+  text-align: center;
+}
+
+.formSignin input {
+  width: 100%;
+  padding: 8px;
+  margin: 2.5px 0;
+  border-radius: 8px;
+  border: 1.5px solid gray;
+}
+
+.formSignin button {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #00a0ff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 10px 0;
+  margin: 10px 0
+}
+
+.formSignin a {
+  color: #00a0ff;
+  font-weight: bold;
+}
+
+.formSignin p {
+  text-align: center;
+  font-size: .9em;
+}
+
+@media screen and (min-width: 800px){
+  .conteudoSignin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-items: center; */
+  }
+  
+  .formSignin {
+    position: relative;
+    transform: translateY(60%);
+    width: 30%;
+  }
+  
+  .formSignin h1 {
+    text-align: center;
+  }
+  
+  .formSignin input {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 8px;
+    border: 1.5px solid gray;
+  }
+  
+  .formSignin input:checked {
+    border: 1.5px solid #00a0ff;
+  }
+
+  .formSignin button {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #00a0ff;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 0;
+    margin: 10px 0
+  }
+
+  .formSignin button:hover {
+    background-color: #00a0cf;
+  }
+  
+  .formSignin a {
+    color: #00a0ff;
+    font-weight: bold;
+  }
+  
+  .formSignin p {
+    text-align: center;
+    font-size: .9em;
+  }
+}

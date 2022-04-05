@@ -25,8 +25,7 @@ export default function Signup(){
       console.log(res.data)
       localStorage.setItem("token", token)
 
-      api.headers.Authorization = "Bearer " + localStorage.getItem("token");
-      window.location.reload();
+      api.defaults.headers.post['Authorization'] = "Bearer " + localStorage.getItem("token");
     })
     .catch(error => console.error("Erro ao criar um usuário.", error))
   }
@@ -34,7 +33,7 @@ export default function Signup(){
 
   return(
     <div>
-      <h1>Signup</h1>
+      <h1>Cadastre-se</h1>
       
       <input type="text" name="nome" className="nome" placeholder="Insira seu nome" value={nome} onChange={(e)=> setNome(e.target.value)} /><br/>
       <input type="email" name="email" className="email" placeholder="email@email.com" value={email} onChange={(e)=> setEmail(e.target.value)} /><br/>
