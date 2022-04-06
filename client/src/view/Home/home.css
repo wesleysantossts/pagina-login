@@ -30,7 +30,7 @@ main p {
 
   .sairHome button {
     position: relative;
-    transform: translateY(900%);
+    transform: translateY(600%);
     color: #00a0ff;
     font-weight: bold;
     background-color: transparent;
