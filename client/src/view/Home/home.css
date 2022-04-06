@@ -14,8 +14,26 @@ main p {
   text-align: center;
 }
 
+.sairHome button {
+  position: relative;
+  transform: translateY(900%);
+  color: #00a0ff;
+  font-weight: bold;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 @media screen and (min-width: 800px) {
   img {
     width: 40%;
+  }
+
+  .sairHome button {
+    position: relative;
+    transform: translateY(900%);
+    color: #00a0ff;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: transparent;
   }
 }

@@ -26,10 +26,12 @@ export default function Signup(){
       localStorage.setItem("token", token)
 
       api.defaults.headers.post['Authorization'] = "Bearer " + localStorage.getItem("token");
+
+      document.location.href="/";
     })
     .catch(error => console.error("Erro ao criar um usuário.", error))
   }
-  
+
 
   return(
     <div className="conteudoSignup">

@@ -21,7 +21,7 @@ export default function Signin(){
       localStorage.setItem("token", token);
 
       api.defaults.headers.post['Authorization'] = "Bearer " + localStorage.getItem("token");
-      window.location.reload();
+      document.location.href="/";
     })
     .catch(error => console.log("Erro ao logar o usuario. Tente novamente", error))
   }

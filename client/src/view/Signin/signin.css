@@ -2,13 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-items: center; */
 }
 
 .formSignin {
   position: relative;
   transform: translateY(60%);
-  width: 50%;
+  width: 75%;
 }
 
 .formSignin h1 {
@@ -50,13 +49,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-items: center; */
   }
   
   .formSignin {
     position: relative;
     transform: translateY(60%);
-    width: 30%;
+    width: 25%;
   }
   
   .formSignin h1 {
@@ -72,7 +70,7 @@
   }
 
   .formSignin button {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 10px;
     border: none;
     background-color: #00a0ff;

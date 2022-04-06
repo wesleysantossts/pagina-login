@@ -2,13 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-items: center; */
 }
 
 .formSignup {
   position: relative;
-  transform: translateY(60%);
-  width: 50%;
+  transform: translateY(50%);
+  width: 75%;
 }
 
 .formSignup h1 {
@@ -50,7 +49,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-items: center; */
   }
   
   .formSignup {
