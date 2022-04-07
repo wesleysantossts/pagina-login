@@ -1,4 +1,6 @@
 [build]
 base = "/opt/build/repo/client/build"
 command = "npm run build"
+commandOrigin = "ui"
 publish = "/opt/build/repo/client/build"
+publishOrigin = "ui"
