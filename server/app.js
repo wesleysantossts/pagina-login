@@ -12,7 +12,7 @@ class App {
   }
 
   middlewares(){
-    this.server.use(express.static("public"), express.urlencoded({extended: false}), express.json(), cors());
+    this.server.use(cors(), express.static("public"), express.urlencoded({extended: false}), express.json());
   }
 
   routes(){
