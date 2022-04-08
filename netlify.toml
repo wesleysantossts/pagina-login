@@ -5,6 +5,6 @@
 
 [build]
 base = "./client/"
-command = "npm build"
+command = "npm run build"
 publish = "./client/build/"
 # functions = "functions"
