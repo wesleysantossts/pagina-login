@@ -1,4 +1,5 @@
+# Devo fazer um build antes de dar o commit e push no repositorio para funcionar
+
 [build]
 base = "client"
-command = "npm run build"
 publish = "./build/"
