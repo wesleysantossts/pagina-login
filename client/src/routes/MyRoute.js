@@ -6,7 +6,7 @@ import {AuthContext} from "../contexts/auth";
 export default function MyRoute({component: Component, isClosed, ...rest}){
   const {signed} = useContext(AuthContext);
   
-  if(!signed && isClosed){
+  if(signed === false && isClosed){
     return(
       <Redirect 
         to={{pathname: "/signin", state: {prevPath: rest.location.pathname}}}
