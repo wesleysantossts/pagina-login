@@ -1,6 +1,6 @@
 # Sistema de Login
 
-Sistema de login criada utilizando React, NodeJS, Express com banco de dados MongoDB e autenticação em JWT.
+Sistema de login criada utilizando React, NodeJS, Express com banco de dados MongoDB, Context API, Styled Components e autenticação em JWT.
 
 https://sistema-de-login.netlify.app/
 
@@ -67,6 +67,8 @@ Como conferência da efetividade do sistema de login, assim que o usuário for a
 - [x] MongoDB;
 - [x] JWTWebToken;
 - [x] React Router Dom;
+- [x] Context API;
+- [x] Styled Components;
 - [x] Mongoose;
 - [x] BCrypt;
 - [x] Axios;
