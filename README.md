@@ -1,8 +1,8 @@
 # Sistema de Login
 
 <div style="display: inline-block">
-  <img src="https://img.shields.io/github/license/wesleysantossts/filmaria?color=brightgreen" />
-  <img src="https://img.shields.io/github/last-commit/wesleysantossts/filmaria.svg" />
+  <img src="https://img.shields.io/github/license/wesleysantossts/pagina-login?color=brightgreen" />
+  <img src="https://img.shields.io/github/last-commit/wesleysantossts/pagina-login.svg" />
   <img src="https://img.shields.io/github/repo-size/wesleysantossts/pagina-login?color=brightgreen" />
 </div><br/>
 
