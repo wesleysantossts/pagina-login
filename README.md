@@ -1,5 +1,11 @@
 # Sistema de Login
 
+<div style="display: inline-block">
+  <img src="https://img.shields.io/github/license/wesleysantossts/filmaria?color=brightgreen" />
+  <img src="https://img.shields.io/github/last-commit/wesleysantossts/filmaria.svg" />
+  <img src="https://img.shields.io/github/repo-size/wesleysantossts/filmaria?color=brightgreen" />
+</div><br/>
+
 Sistema de login criada utilizando React, NodeJS, Express com banco de dados MongoDB, Context API, Styled Components e autenticação em JWT.
 
 https://sistema-de-login.netlify.app/
